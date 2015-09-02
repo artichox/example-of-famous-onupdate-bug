@@ -1,0 +1,47 @@
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+html, body {
+  overflow-x: hidden;
+  height: 100%;
+}
+
+body {
+  color: blue;
+  min-height: 50px;
+}
+
+.nav {
+  background-color: red;
+  width: 100%;
+  color: #fff;
+}
+
+.nav-menu {
+  & ul {
+    margin: 5px; 
+  }
+
+  & ul li {
+    display: inline;
+    margin: 10px;
+    font-size: 15px;
+  }
+
+  & i {
+    vertical-align: middle;
+  }
+
+}
+
+.round-tile {
+  border-radius: 30px;
+  background-color: #FFFFFF;
+  padding: 8px;
+}
