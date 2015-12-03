@@ -3,6 +3,7 @@ class @CurriculumMenu extends BaseNode
   constructor: ()->
     super
 
+    @.numOnUpdates = 0
     @.OPEN = 1
     @.CLOSED = 0
 
@@ -37,7 +38,8 @@ class @CurriculumMenu extends BaseNode
       index++
 
   onUpdate: ()->
-    console.log "On update"
+    @.numOnUpdates++
+    $("#num_on_updates").text @.numOnUpdates
     @.setPosition 0, @.positionTransitionable.get() * 500, 0
 
   open: ()=>

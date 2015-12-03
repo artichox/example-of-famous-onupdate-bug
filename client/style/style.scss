@@ -23,6 +23,7 @@ body {
   color: #fff;
 }
 
+
 .nav-menu {
   & ul {
     margin: 5px; 
@@ -44,4 +45,10 @@ body {
   border-radius: 30px;
   background-color: #FFFFFF;
   padding: 8px;
+}
+
+.large-top-margin {
+  position: absolute;
+  top: 400px;
+  left: 40px;
 }
